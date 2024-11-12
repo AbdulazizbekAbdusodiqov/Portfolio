@@ -9,7 +9,7 @@ export const homeCon = (req, res, next) => {
             "pages", 
             "index.ejs"
         )
-        res.render(homePath, {title: "Abdulaziz Dev Home"})
+        res.status(200).render(homePath, {title: "Abdulaziz Dev Home"})
     }catch(err){
         next(err)
     }
@@ -23,7 +23,7 @@ export const aboutCon = (req, res, next) => {
             "pages", 
             "about.ejs"
         )
-        res.render(homePath, {title: "Abdulaziz Dev About"})
+        res.status(200).render(homePath, {title: "Abdulaziz Dev About"})
     }catch(err){
         next(err)
     }
@@ -37,7 +37,7 @@ export const contactCon = (req, res, next) => {
             "pages", 
             "contact.ejs"
         )
-        res.render(homePath, {title: "Abdulaziz Dev Contact"})
+        res.status(200).render(homePath, {title: "Abdulaziz Dev Contact"})
     }catch(err){
         next(err)
     }

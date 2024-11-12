@@ -13,7 +13,7 @@ app.set("view engine", "ejs");
 app.use("/", abdulazizdev);
 
 app.use((req, res)=>{
-  return res.send("not found Abdulaziz dev")
+  return res.status(404).send("not found Abdulaziz dev")
 })
 app.use((err, req, res, next)=>{
   if(err){
