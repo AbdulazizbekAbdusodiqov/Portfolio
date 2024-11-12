@@ -2,14 +2,30 @@
 <html lang="en">
 
 <head>
-    <%-include('../partials/header.ejs') %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/nav.css">
+    <title>Abdulaziz Dev Home</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <div class="container">
-        
-        <%-include('../partials/nav.ejs')%>
+
+        <nav class="nav">
+            <h2>Abdusodiqov</h2>
+            <ul type="none">
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <!-- <li><a href="#">MY PROJECT'S</a></li> -->
+                <li><a href="/contact">CONTACT</a></li>
+                <!-- <li>
+                    <button>SIGN IN</button>
+                    <button>SIGN UP</button>
+                </li> -->
+            </ul>
+        </nav>
         <div class="main">
             <div class="description">
                 <p>hello I'm</p>
@@ -25,7 +41,7 @@
     </div>
     <script>
         document.querySelector('.downloadBtn').addEventListener('click', function () {
-            
+
             const fileUrl = '/my_resume/Resume.docx'
             const fileName = 'Resume.docx';
 

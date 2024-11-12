@@ -1,43 +1,40 @@
-import {join} from 'path'
+import path from 'path'
 
 export const homeCon = (req, res, next) => {
     try{
-        const homePath = join(
+        const homePath = path.join(
             process.cwd(), 
             "src", 
             "views", 
-            "pages", 
-            "index.ejs"
+            "index.html"
         )
-        res.status(200).render(homePath, {title: "Abdulaziz Dev Home"})
+        res.status(200).sendFile(homePath)
     }catch(err){
         next(err)
     }
 }
 export const aboutCon = (req, res, next) => {
     try{
-        const homePath = join(
+        const homePath = path.join(
             process.cwd(), 
             "src", 
             "views", 
-            "pages", 
-            "about.ejs"
+            "about.html"
         )
-        res.status(200).render(homePath, {title: "Abdulaziz Dev About"})
+        res.status(200).sendFile(homePath)
     }catch(err){
         next(err)
     }
 }
 export const contactCon = (req, res, next) => {
     try{
-        const homePath = join(
+        const homePath = path.join(
             process.cwd(), 
             "src", 
             "views", 
-            "pages", 
-            "contact.ejs"
+            "contact.html"
         )
-        res.status(200).render(homePath, {title: "Abdulaziz Dev Contact"})
+        res.status(200).sendFile(homePath)
     }catch(err){
         next(err)
     }
