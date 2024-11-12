@@ -11,5 +11,6 @@
       "src": "/abdulazizdev/(.*)", 
       "dest": "api/server.js"
     }
-  ]
+  ],
+  "outputDirectory": "src/public"
 }
