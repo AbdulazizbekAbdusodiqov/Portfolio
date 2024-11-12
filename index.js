@@ -12,6 +12,15 @@ app.set("view engine", "ejs");
 
 app.use("/", abdulazizdev);
 
+app.use((req, res)=>{
+  return res.send("not found Abdulaziz dev")
+})
+app.use((err, req, res, next)=>{
+  if(err){
+    res.send("error")
+  }
+})
+
 const PORT = process.env.PORT || 3001
 
 app.listen(PORT, (err)=>{
