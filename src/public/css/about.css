@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.container{
+    background-image: url('../img/image.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+.main div{
+    width: calc(100% / 2.6);
+}
+.about{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 10px #fff;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+.about h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.about span{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 1px #fff;
+}
+.about h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.about p{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.skills{
+    margin-right: -200px;
+}
+.skills h3{
+    text-shadow: 0px 0px 5px black;
+}
+.skill-container {
+    background-color: #ffffff00;
+    border-radius: 8px;
+    margin: 8px 0;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px #fff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.skill-container:hover{
+    width: calc(100% /2);
+    transition: 0.5s;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #fff;
+    text-align: right;
+    padding-right: 5px;
+    color: grey;
+    line-height: 20px;
+    border-radius: 8px 0 0 8px;
+}

@@ -1,0 +1,45 @@
+.nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(227, 227, 227, 0.144);
+    border-end-end-radius: 20px;
+    width: 100%;
+    border-end-start-radius: 20px;
+}
+.nav h2{
+    font-size: 35px;
+    color: #fff;
+}
+.nav ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #f2f0f0a5;
+}
+.nav ul li a:hover{
+    color: #fffdfdd5;
+    text-shadow: 0px 0px 3px yellow;
+}
+.nav ul li a:active{
+    color: #ffffff;
+    text-shadow: 0px 0px 3px rgb(56, 159, 56);
+}
+
+.nav ul li button{
+    background: none;
+    color: #fff;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 8px;
+}
+.nav ul li button:hover{
+    background-color: rgba(151, 151, 151, 0.373);
+}
