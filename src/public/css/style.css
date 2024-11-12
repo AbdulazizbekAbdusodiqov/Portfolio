@@ -57,3 +57,23 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px #fff;
 }
+
+@media (max-width: 500px){
+    .main{
+        flex-direction: column-reverse;
+    }
+    .description{
+        width: 60%;
+        margin-top: -15px;
+    }
+    .description h2{
+        text-align: center;
+    }
+    .description button{
+        height: 50px;
+    }
+    .img img{
+        width: 200px;
+        margin-top: -10px;
+    }
+}

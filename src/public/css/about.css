@@ -86,3 +86,40 @@
     line-height: 20px;
     border-radius: 8px 0 0 8px;
 }
+@media (max-width: 500px){
+    .main{
+        flex-direction: column;
+    }
+    .about{
+        width: 80% !important;
+    }
+    .about h2{
+        font-size: 16px;
+        margin: 0px ;
+    }
+    .about h2 span{
+        font-size: 20px;
+        display: block;
+        margin: 0px ;
+    }
+    .about h3{
+        font-size: 16px;
+        margin: 0px ;
+    }
+    .about p{
+        font-size: 16px;
+        margin: 0px;
+    }
+    .skills{
+        width: 60% !important;
+        margin: 10px;
+    }
+    .skill-container{
+        width: 90% !important;
+        margin-bottom: 5px;
+    }
+    .skill-container:hover{
+        width: 100% !important;
+    }
+
+}
