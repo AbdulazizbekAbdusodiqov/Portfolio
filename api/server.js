@@ -14,5 +14,5 @@ app.use("/abdulazizdev", abdulazizdev);
 
 // Vercel uchun API funksiyasi
 export default (req, res) => {
-  app(req, res);
+  app(req, res); // Vercel API talablariga muvofiq
 };
