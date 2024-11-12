@@ -46,16 +46,7 @@
 .nav ul li button:hover{
     background-color: rgba(151, 151, 151, 0.373);
 }
-.container{
-    height: 100vh;
-    width: 100%;
-    background-image: url('../img/contact.jpg');
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 @media (max-width:500px){
     .nav{
         display: flex;
