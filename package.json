@@ -1,11 +1,12 @@
 {
   "name": "blog_post",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start:dev": "node --watch api/server.js",
-    "start": "node api/server.js"
+    "start:dev": "node --watch index.js",
+    "start": "node index.js",
+    "build" : "node index.js"
   },
   "keywords": [],
   "author": "",
