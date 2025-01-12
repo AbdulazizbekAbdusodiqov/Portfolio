@@ -6,10 +6,9 @@
 .container{
     height: 100vh;
     width: 100%;
-    background-color: #222;
-    /* background-image: url('/img/background.jpg');
+    background-image: url('/img/bgimg.jpg');
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
