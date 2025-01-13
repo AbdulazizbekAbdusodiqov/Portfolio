@@ -11,7 +11,7 @@ const app = express();
 app.use(express.static(path.join(process.cwd(), "src", "public"))); // 'public' papkasidan xizmat ko'rsatish
 
 // Route-lar
-app.use('/', abdulazizdev);
+app.use('/abdulaziz-dev', abdulazizdev);
 
 // 404 Error handling
 app.use((req, res) => {
