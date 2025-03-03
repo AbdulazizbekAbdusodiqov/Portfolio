@@ -18,7 +18,7 @@ app.use((err, req, res, next) => {
   }
 });
 
-const PORT = 80
+const PORT = 3000
 
 app.listen(PORT, (err) => {
   if (err) {

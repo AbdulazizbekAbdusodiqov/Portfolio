@@ -70,6 +70,10 @@
         align-items: center;
         gap: 5px;
     }
+    .main:hover{
+        width: 80%;
+        transition: 1s;
+    }
     .main h3{
         font-size: 16px;
     }

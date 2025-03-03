@@ -113,7 +113,7 @@
     }
     .skills{
         width: 60% !important;
-        margin: 10px;
+        margin: 5px;
     }
     .skill-container{
         width: 90% !important;
@@ -122,5 +122,11 @@
     .skill-container:hover{
         width: 100% !important;
     }
-
+    footer {
+        margin-top: 20px;
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
 }
