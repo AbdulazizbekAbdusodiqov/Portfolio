@@ -12,3 +12,13 @@ body{
     background-repeat: no-repeat;
     overflow-x:hidden ;
 }
+footer{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
