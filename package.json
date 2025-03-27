@@ -4,15 +4,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "postbuild": "next-sitemap",
     "start:dev": "node --watch index.js",
     "start": "node index.js",
-    "build" : "node index.js"
+    "build": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "next-sitemap": "^4.2.3"
   },
   "description": ""
 }
