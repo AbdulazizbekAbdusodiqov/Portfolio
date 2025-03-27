@@ -1,101 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .container{
-    height: 100vh;
-    width: 100%;
-    background-image: url('/img/bgimg.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    display: flex;
+    width: 1100px;
+    align-items: center;
+    justify-content: space-between;
+    height: 680px;
+}
+.container .description{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.main{
-    width: 100%;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    color: #fff;
-    font-size: 25px;
-}
-.description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    padding: 50px;
-    backdrop-filter: blur(15px);
-    border: 1px solid grey;
+    justify-content: center;
+    gap: 30px;
+    width: 500px;
+    height: 300px;
     border-radius: 8px;
+    border: 1px solid #ffffff5d;
+    box-shadow: 0px 0px 5px;
+    color: #ffffff;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+
+.description p{
+    font-size: 25px;
 }
 .description h2{
     font-size: 30px;
-    color: #ffffffcb;
 }
-.description button{
-    height: 40px;
-    background-color: rgb(104, 104, 104);
-    border: none;
-    color: #fff;
-    font-weight: bold;
+.description h3{
+    font-size: 20px;
+}
+.downloadBtn{
+    width: auto;
+    padding: 4px 8px;
     border-radius: 8px;
-    width: 70%;
-    margin-top: 20px;
+    background-color: rgb(81, 169, 219);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    transition: all 0.4s;
 }
-.description button:hover{
-    background-color: grey;
+
+.downloadBtn:hover{
+    transition: all 0.4s;
+    padding: 9px;
+    box-shadow: 0px 0px 10px #ffffff;
 }
-.description button:active{
-    background-color: rgb(83, 81, 81);
-}
+
 .img img{
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #fff;
-}
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #ffffff;
 }
 
 @media (max-width: 500px){
-    body {
-        background-image: url("/img/bgimg.jpg");
-        background-size: cover; 
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    .main{
+    .container{
         flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
     }
-    .description{
-        width: 60%;
-        margin-top: -15px;
+    .container .description{
+        box-shadow: 0px;
+        border: none;
     }
     .description h2{
-        text-align: center;
+        font-size: 25px;
     }
-    .description button{
-        height: 50px;
+}
+@media (max-width: 400px){
+    .container{
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
     }
-    .img img{
-        width: 255px;
-        margin-bottom: 30px;
+    .container .description{
+        box-shadow: 0px;
+        border: none;
     }
-    footer {
-        margin-top: 120px;
-        background: #333;
-        color: white;
-        text-align: center;
-        padding: 20px;
+    .description h2{
+        font-size: 25px;
     }
 }
