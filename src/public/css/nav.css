@@ -96,3 +96,22 @@ header{
         font-size: 20px;
     }
 }
+@media (max-width:300px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        margin-bottom: 30px;
+        padding: 20px;
+        gap: 10px;   
+    }
+    body {
+        background-image: url("/img/bgimg.jpg");
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .nav ul li a{
+        font-size: 20px;
+    }
+}
