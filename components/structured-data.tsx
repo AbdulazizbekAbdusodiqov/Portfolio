@@ -3,7 +3,7 @@ export function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Abdulazizbek Abdusodiqov",
-    alternateName: ["Abdulaziz-dev", "abu-dev", "abdulazizdev"],
+    alternateName: ["Abdulaziz-dev", "abu-dev", "abdulazizdev", "abdusodiqov"],
     jobTitle: "FullStack Developer",
     url: "https://abdulazizdev.uz",
     sameAs: ["https://github.com/AbdulazizbekAbdusodiqov", "https://t.me/dev_abu"],
