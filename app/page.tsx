@@ -28,6 +28,7 @@ export default function Home() {
             <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
               Aloqa
             </Link>
+            
           </nav>
           <div className="flex items-center gap-4">
             <ThemeToggle />
