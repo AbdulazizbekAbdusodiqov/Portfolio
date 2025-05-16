@@ -32,7 +32,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "uz_UZ",
-    url: "https://abdulaziz-dev.vercel.app",
+    url: "https://abdulazizdev.uz",
     title: "Abdulazizbek Abdusodiqov | FullStack Developer | Abdulaziz-dev",
     description:
       "Abdulazizbek Abdusodiqov (Abdulaziz-dev, abu-dev) - FullStack Developer portfolio. JavaScript, React, Next.js, Node.js, NestJS va boshqa texnologiyalar bilan ishlaydigan dasturchi.",
@@ -65,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang="uz" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://abdulaziz-dev.vercel.app" />
+        <link rel="canonical" href="https://abdulazizdev.uz" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>

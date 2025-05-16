@@ -5,7 +5,7 @@ export function StructuredData() {
     name: "Abdulazizbek Abdusodiqov",
     alternateName: ["Abdulaziz-dev", "abu-dev", "abdulazizdev"],
     jobTitle: "FullStack Developer",
-    url: "https://abdulaziz-dev.vercel.app",
+    url: "https://abdulazizdev.uz",
     sameAs: ["https://github.com/AbdulazizbekAbdusodiqov", "https://t.me/dev_abu"],
     knowsAbout: [
       "JavaScript",
