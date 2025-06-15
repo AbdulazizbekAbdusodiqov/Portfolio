@@ -222,7 +222,7 @@ export default function Home() {
                       <CardDescription>
                         Yong'in xavfsizligi uskunalari uchun korporativ veb-sayt. Men faqat backend qismini ishlab
                         chiqdim - mahsulotlar boshqaruvi, buyurtmalar tizimi, ko'p tillik va admin panel API'larini
-                        NestJS va PostgreSQL bilan yaratdim.
+                        NestJS va MongoDB bilan yaratdim.
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
