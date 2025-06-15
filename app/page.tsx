@@ -30,7 +30,6 @@ export default function Home() {
             <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
               Aloqa
             </Link>
-
           </nav>
           <div className="flex items-center gap-4">
             <ThemeToggle />
@@ -154,7 +153,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-         <section id="projects" className="py-12 md:py-16 lg:py-20 bg-muted/50">
+        <section id="projects" className="py-12 md:py-16 lg:py-20 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-8 text-center">
               <div className="space-y-4">
@@ -165,7 +164,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="mx-auto max-w-6xl">
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                   <Card className="overflow-hidden">
                     <div className="aspect-video overflow-hidden">
                       <img
@@ -193,11 +192,52 @@ export default function Home() {
                         <Badge variant="outline">NestJS</Badge>
                         <Badge variant="outline">PostgreSQL</Badge>
                         <Badge variant="outline">Prisma</Badge>
+                        <Badge variant="outline">JWT Auth</Badge>
+                        <Badge variant="outline">REST API</Badge>
                       </div>
                     </CardContent>
                     <CardFooter className="flex gap-2">
                       <Button asChild size="sm">
                         <Link href="https://www.phone-tech.uz" target="_blank">
+                          Saytni ko'rish
+                          <ExternalLink className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+
+                  <Card className="overflow-hidden">
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        alt="Firewise.uz - Yong'in xavfsizligi tizimlari"
+                        className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                        src="https://sjc.microlink.io/r2p6a7_clQrOHecwHuSaaEb95ehVV_4VDfZOcd_aHnB175soeaKbHgXNmTJUO9A0FakZhGiX0lhc7k2L0Wq-Aw.jpeg"
+                      />
+                    </div>
+                    <CardHeader>
+                      <div className="flex items-center justify-between">
+                        <CardTitle className="text-xl">Firewise.uz</CardTitle>
+                        <Badge variant="secondary">Backend API</Badge>
+                      </div>
+                      <CardDescription>
+                        Yong'in xavfsizligi uskunalari uchun korporativ veb-sayt. Men faqat backend qismini ishlab
+                        chiqdim - mahsulotlar boshqaruvi, buyurtmalar tizimi, ko'p tillik va admin panel API'larini
+                        NestJS va PostgreSQL bilan yaratdim.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline">NestJS</Badge>
+                        <Badge variant="outline">MongoDB</Badge>
+                        <Badge variant="outline">Mongoose</Badge>
+                        <Badge variant="outline">JWT Auth</Badge>
+                        <Badge variant="outline">REST API</Badge>
+                        <Badge variant="outline">Admin Panel</Badge>
+                      </div>
+                    </CardContent>
+                    <CardFooter className="flex gap-2">
+                      <Button asChild size="sm">
+                        <Link href="https://firewise.uz" target="_blank">
                           Saytni ko'rish
                           <ExternalLink className="ml-2 h-4 w-4" />
                         </Link>
