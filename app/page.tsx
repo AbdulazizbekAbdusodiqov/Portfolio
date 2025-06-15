@@ -1,11 +1,13 @@
 import Link from "next/link"
-import { ArrowRight, Code, Mail, User } from "lucide-react"
+import { ArrowRight, Code, Download, ExternalLink, Mail, User } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
 
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { BackgroundAnimation } from "@/components/background-animation"
 import { MobileMenu } from "@/components/mobile-menu"
 import { StructuredData } from "@/components/structured-data"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
 
 export default function Home() {
   return (
@@ -28,7 +30,7 @@ export default function Home() {
             <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
               Aloqa
             </Link>
-            
+
           </nav>
           <div className="flex items-center gap-4">
             <ThemeToggle />
@@ -65,6 +67,12 @@ export default function Home() {
                     <Mail className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
+                <Button variant="secondary" asChild>
+                  <Link href="/resume/Abdulazizbek_Abdusodiqov_Resume.pdf" download>
+                    Resume yuklash
+                    <Download className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -75,7 +83,7 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Haqimda</div>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Men Abdulazizbek Abdusodiqov (Abdulaziz-dev), 19 yoshli FullStack Developer man. 2005-yil mayda
+                  Men Abdulazizbek Abdusodiqov (Abdulaziz-dev), 19 yoshli FullStack Developer man. 2006-yil mayda
                   tug'ilganman. O'rta maxsus ma'lumotga egaman.
                 </p>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -146,43 +154,80 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
-          id="projects"
-          className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-sky-100 to-sky-50 dark:from-sky-950 dark:to-slate-900"
-        >
+         <section id="projects" className="py-12 md:py-16 lg:py-20 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-8 text-center">
-              <div className="mx-auto max-w-5xl">
-                <div className="flex flex-col items-center space-y-6">
-                  <div className="rounded-full bg-sky-200 dark:bg-sky-800 p-6">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-12 w-12 text-sky-700 dark:text-sky-300"
-                    >
-                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                      <path d="M9 18c-4.51 2-5-2-7-2" />
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl font-bold">GitHub Profilim</h3>
-                  <p className="text-muted-foreground max-w-[600px]">
-                    Barcha loyihalarim va kodlarim GitHub profilimda joylashgan. Iltimos, mening ishlarim bilan
-                    tanishish uchun profilimga tashrif buyuring.
-                  </p>
-                  <Button
-                    asChild
-                    size="lg"
-                    className="mt-4 bg-sky-600 hover:bg-sky-700 text-white dark:bg-sky-700 dark:hover:bg-sky-600"
-                  >
+              <div className="space-y-4">
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Loyihalar</div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Mening ishlarim</h2>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
+                  Men yaratgan loyihalar va veb-saytlar
+                </p>
+              </div>
+              <div className="mx-auto max-w-6xl">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+                  <Card className="overflow-hidden">
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        alt="Phone-Tech.uz - Telefon va texnika e'lonlari sayti"
+                        className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                        src="https://sjc.microlink.io/TMmgipdmPkBfSLg8S0Wkb7WchMAr6Y8BcNeIPjg7-nB803t0vFbwJSqcegtoHFDfKWib9UwZ0IfX08MTuoHO6w.jpeg"
+                      />
+                    </div>
+                    <CardHeader>
+                      <div className="flex items-center justify-between">
+                        <CardTitle className="text-xl">Phone-Tech.uz</CardTitle>
+                        <Badge variant="secondary">E-commerce</Badge>
+                      </div>
+                      <CardDescription>
+                        Telefon va texnika e'lonlari uchun zamonaviy marketplace platformasi. React va Next.js frontend,
+                        NestJS va PostgreSQL backend bilan yaratilgan. Foydalanuvchilar o'z mahsulotlarini sotish va
+                        xarid qilish imkoniyatiga ega.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline">React</Badge>
+                        <Badge variant="outline">Next.js</Badge>
+                        <Badge variant="outline">SCSS</Badge>
+                        <Badge variant="outline">NestJS</Badge>
+                        <Badge variant="outline">PostgreSQL</Badge>
+                        <Badge variant="outline">Prisma</Badge>
+                      </div>
+                    </CardContent>
+                    <CardFooter className="flex gap-2">
+                      <Button asChild size="sm">
+                        <Link href="https://www.phone-tech.uz" target="_blank">
+                          Saytni ko'rish
+                          <ExternalLink className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+
+                  <Card className="overflow-hidden border-dashed border-2 flex items-center justify-center min-h-[400px]">
+                    <div className="text-center space-y-4">
+                      <div className="rounded-full bg-muted p-6 mx-auto w-fit">
+                        <Code className="h-12 w-12 text-muted-foreground" />
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-xl font-semibold">Keyingi loyiha</h3>
+                        <p className="text-muted-foreground">Tez orada yangi loyihalar qo'shiladi</p>
+                      </div>
+                      <Button asChild variant="outline">
+                        <Link href="https://github.com/AbdulazizbekAbdusodiqov" target="_blank">
+                          GitHub'da ko'rish
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </div>
+                  </Card>
+                </div>
+
+                <div className="mt-8 text-center">
+                  <Button asChild size="lg" variant="outline">
                     <Link href="https://github.com/AbdulazizbekAbdusodiqov" target="_blank">
-                      GitHub profilimni ko'rish
+                      Barcha loyihalarni GitHub'da ko'rish
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
