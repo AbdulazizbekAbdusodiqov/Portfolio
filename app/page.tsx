@@ -46,10 +46,14 @@ export default function Home() {
             <div className="flex flex-col items-center gap-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                  Salom, men <span className="text-primary">Abdulazizbek Abdusodiqov</span>
+                  Salom, men <span className="text-primary">Abdulazizbek Abdusodiqov</span> — 
+                  o'zbek fullstack dashturchiman
+                  {/* (abu-dev, abudev, abu dev) */}
+                  {/* (ozbek, uzbek)  */}
+                  {/* (full stack, full-stack) */}
                 </h1>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  FullStack Developer <span className="text-xs text-muted-foreground">(Abdulaziz-dev, abu-dev)</span>.
+                  {/* O'zbek, Ozbek, Uzbek FullStack Developer <span className="text-xs text-muted-foreground">(Abdulaziz-dev, abu-dev, abudev, abu dev)</span>. */}
                   Zamonaviy va chiroyli veb-saytlar va ilovalar yarataman.
                 </p>
               </div>
@@ -102,7 +106,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <div className="overflow-hidden rounded-xl">
                   <img
-                    alt="Abdulazizbek Abdusodiqov (Abdulaziz-dev)"
+                    alt="O'zbek, Ozbek, Uzbek FullStack Developer - Abdulazizbek Abdusodiqov (abu-dev, abudev, abu dev)"
                     className="aspect-square object-cover object-center"
                     height="400"
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8ozEtgtZ7biuohE4MzJ84TGvecyGm8.png"
@@ -168,9 +172,9 @@ export default function Home() {
                   <Card className="overflow-hidden">
                     <div className="aspect-video overflow-hidden">
                       <img
-                        alt="Phone-Tech.uz - Telefon va texnika e'lonlari sayti"
+                        alt="Phone-Tech.uz - Telefon va texnika e'lonlari sayti | O'zbek, Ozbek, Uzbek FullStack Developer (abu-dev, abudev, abu dev)"
                         className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
-                        src="https://sjc.microlink.io/TMmgipdmPkBfSLg8S0Wkb7WchMAr6Y8BcNeIPjg7-nB803t0vFbwJSqcegtoHFDfKWib9UwZ0IfX08MTuoHO6w.jpeg"
+                        src="/phono-tech.png"
                       />
                     </div>
                     <CardHeader>
@@ -209,9 +213,9 @@ export default function Home() {
                   <Card className="overflow-hidden">
                     <div className="aspect-video overflow-hidden">
                       <img
-                        alt="Firewise.uz - Yong'in xavfsizligi tizimlari"
+                        alt="Firewise.uz - Yong'in xavfsizligi tizimlari | O'zbek, Ozbek, Uzbek FullStack Developer (abu-dev, abudev, abu dev)"
                         className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
-                        src="https://sjc.microlink.io/r2p6a7_clQrOHecwHuSaaEb95ehVV_4VDfZOcd_aHnB175soeaKbHgXNmTJUO9A0FakZhGiX0lhc7k2L0Wq-Aw.jpeg"
+                        src="/firewise.png"
                       />
                     </div>
                     <CardHeader>
